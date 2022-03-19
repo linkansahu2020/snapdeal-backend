@@ -1,4 +1,5 @@
 const express = require("express")
+require("dotenv").config()
 
 const cors = require("cors");
 
@@ -59,6 +60,8 @@ const cartController=require("./controllers/cartController")
 
 app.use("/products",productController)
 app.use("/carts",cartController)
+
+const port = process.env.PORT || 9345;
 
 app.listen(9345,async()=>{
     try{
