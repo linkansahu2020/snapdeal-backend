@@ -51,6 +51,9 @@ passport.serializeUser(function (user, done) {
           return res.send({ user, token });
       } 
   );
+  app.get("",(req,res)=>{
+    return res.send("Hello")
+  })
 
   // ------------------------Vivek index----------------------------
 
