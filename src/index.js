@@ -63,7 +63,7 @@ app.use("/carts",cartController)
 
 const port = process.env.PORT || 9345;
 
-app.listen(9345,async()=>{
+app.listen(port,async()=>{
     try{
         await connect()
         console.log("My port no is 9345")
