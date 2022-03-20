@@ -61,7 +61,7 @@ const cartController=require("./controllers/cartController")
 app.use("/products",productController)
 app.use("/carts",cartController)
 
-const port = process.env.PORT || 9345;
+const port = process.env.PORT || 2345;
 
 app.listen(port,async()=>{
     try{
